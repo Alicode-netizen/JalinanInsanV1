@@ -14,7 +14,7 @@ from bs4 import BeautifulSoup
 st.set_page_config(page_title="Jalinan Insan", page_icon="👥", layout="wide")
 USER_FILE = "users.json"
 DATA_DIR = "user_data"
-LOGO_PATH = "LogoJK.png"
+LOGO_PATH = "logoJK.png"
 
 if not os.path.exists(DATA_DIR):
     os.makedirs(DATA_DIR)
