@@ -1,5 +1,5 @@
 streamlit
 graphviz
 pandas
-request
+requests
 beautifulsoup4
