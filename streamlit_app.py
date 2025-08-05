@@ -11,10 +11,10 @@ import requests
 from bs4 import BeautifulSoup
 
 # ---------- Configurations ----------
-st.set_page_config(page_title="Jalinan Insan", page_icon="👥", layout="wide")
+st.set_page_config(page_title="Jaringan Insan", page_icon="👥", layout="wide")
 USER_FILE = "users.json"
 DATA_DIR = "user_data"
-LOGO_PATH = "logoJK.png"  # Lowercase "l" as requested
+LOGO_PATH = "LogoJR.png"  
 
 if not os.path.exists(DATA_DIR):
     os.makedirs(DATA_DIR)
@@ -117,7 +117,7 @@ if st.session_state.authenticated:
     # ---------- Home ----------
     with tabs[0]:
         render_logo()
-        st.success("🌟 Welcome to Jalinan Insan")
+        st.success("🌟 Welcome to Jaringan Insan")
         bio = st.session_state.user_data.get("bio", {})
         st.markdown(f"**Name:** {bio.get('name', 'Not set')}")
         st.markdown(f"**Email:** {st.session_state.user_email}")
@@ -416,3 +416,4 @@ else:
     render_logo()
     st.title("👥 Jalinan Insan")
     st.info("Please log in or sign up to access the app features. Use the sidebar to log in or create a new account.")
+
