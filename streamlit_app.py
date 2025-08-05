@@ -11,7 +11,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # ---------- Configurations ----------
-st.set_page_config(page_title="Jaringan Insan", page_icon="👥", layout="wide")
+st.set_page_config(page_title=" Jaringan Insan ", page_icon="👥", layout="wide")
 USER_FILE = "users.json"
 DATA_DIR = "user_data"
 LOGO_PATH = "LogoJR.png"  
@@ -416,4 +416,5 @@ else:
     render_logo()
     st.title("👥 Jalinan Insan")
     st.info("Please log in or sign up to access the app features. Use the sidebar to log in or create a new account.")
+
 
